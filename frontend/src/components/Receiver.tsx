@@ -17,12 +17,12 @@ export default function Receiver(){
                 videoRef.current.srcObject = event.streams[0];
 
 
-                try{
-                    await videoRef.current.play();
-                }
-                catch(err){
-                    console.log(err);
-                }
+                // try{
+                //     await videoRef.current.play();
+                // }
+                // catch(err){
+                //     console.log(err);
+                // }
             }
         }
 
