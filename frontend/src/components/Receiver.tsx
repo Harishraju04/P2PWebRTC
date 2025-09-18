@@ -15,14 +15,6 @@ export default function Receiver(){
         pc.ontrack = async (event) =>{
             if(videoRef.current && event.streams[0]){
                 videoRef.current.srcObject = event.streams[0];
-
-
-                // try{
-                //     await videoRef.current.play();
-                // }
-                // catch(err){
-                //     console.log(err);
-                // }
             }
         }
 
